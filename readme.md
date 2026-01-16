@@ -36,7 +36,6 @@ cd ~/projetos
 ---
 
 ## 2. Clone OpenDNP3 and This Project
-
 ### 2.1. Clone the OpenDNP3 library
 
 ```bash
