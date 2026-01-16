@@ -4,7 +4,6 @@ This project implements a **DNP3 outstation (slave)** running on a **Raspberry P
 
 The code is **cross-compiled for ARM** on an Ubuntu 22.04 virtual machine and then deployed to the Raspberry Pi via SSH.
 
-teste1
 
 ---
 
@@ -33,42 +32,57 @@ Create a base folder for projects:
 mkdir -p ~/projetos
 cd ~/projetos
 
+
 ---
+
 ## 2. Clone OpenDNP3 and This Project
 
-2.1. Clone the OpenDNP3 library
+### 2.1. Clone the OpenDNP3 library
+
+```bash
 
 cd ~/projetos
 git clone https://github.com/dnp3/opendnp3.git
 
-This repository contains the OpenDNP3 library that will be used as a dependency.
+// This repository contains the OpenDNP3 library that will be used as a dependency.
 
 
-2.2. Clone this outstation project
+### 2.2. Clone this outstation project
 
+```bash
 cd ~/projetos
 git clone https://github.com/renfernand/RPI_slavednp3.git
 cd RPI_slavednp3
 
 ---
+
 ## 3. Configure SSH Access to the Raspberry Pi
 
 On the Raspberry Pi (target):
 
 Habilite o SSH (via raspi-config ou interface gráfica):
 
+```bash
 sudo raspi-config
+
 
 //Interface Options -> SSH -> Enable
 //discover the ip
 
+```bash
 hostname -I
 
 //test the ssh from ubuntu
 
+```bash
 ssh pi@<IP_DA_RPI>
 
+
+---
+
 ## 4. Build (Cross-Compile for Raspberry Pi)
+
+```bash
 cd ~/projetos/RPI_slavednp3
 cmake -S . -B build-rpi \
   -G Ninja \
@@ -80,6 +94,7 @@ cmake --build build-rpi
 
 
 ---
+
 ## 5. Deploy and Run on the Raspberry Pi
 
 O script deploy_rpi.sh (já no repositório) faz:
@@ -103,7 +118,9 @@ A Raspberry esteja acessível via SSH
 O binário e a biblioteca possam ser copiados para ${RPI_DIR}
 
 ---
+
 ## 6. Project Structure (Resumo)
+
 RPI_slavednp3/
 ├── CMakeLists.txt        # Configuração do projeto
 ├── src/
