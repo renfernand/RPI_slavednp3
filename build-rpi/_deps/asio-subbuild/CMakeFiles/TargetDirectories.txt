@@ -1,0 +1,3 @@
+/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/CMakeFiles/asio-populate.dir
+/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/CMakeFiles/edit_cache.dir
+/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/CMakeFiles/rebuild_cache.dir

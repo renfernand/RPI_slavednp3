@@ -1,0 +1,3 @@
+/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/CMakeFiles/ser4cpp-populate.dir
+/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/CMakeFiles/edit_cache.dir
+/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/CMakeFiles/rebuild_cache.dir

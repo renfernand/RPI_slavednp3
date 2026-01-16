@@ -1,0 +1,21 @@
+# ninja log v5
+794	818	1767644919838775024	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-install	9fa42fa861b59fe
+771	794	1767644919815774896	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-build	75d87c95daa074da
+748	771	1767644919791774763	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-configure	218ca7cefb2b0fd8
+722	748	1767644919768774635	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-patch	3f0dcb002b079908
+722	748	1767644919768774635	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-patch	3f0dcb002b079908
+698	722	1767644919742774491	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-update	c30dcf5bba86ea2e
+794	818	1767644919838775024	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-install	9fa42fa861b59fe
+840	889	1767644919908775414	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-done	fdd1e9f575dcd29e
+840	889	1767644919908775414	CMakeFiles/ser4cpp-populate-complete	fdd1e9f575dcd29e
+840	889	1767644919908775414	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/CMakeFiles/ser4cpp-populate-complete	fdd1e9f575dcd29e
+0	89	1767644919109770972	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-mkdir	14f12f3db8bfd99e
+89	698	1767644919719774363	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-download	9131885091eae674
+0	89	1767644919109770972	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-mkdir	14f12f3db8bfd99e
+748	771	1767644919791774763	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-configure	218ca7cefb2b0fd8
+840	889	1767644919908775414	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-done	fdd1e9f575dcd29e
+89	698	1767644919719774363	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-download	9131885091eae674
+818	840	1767644919861775152	/home/ufu/projetos/slavednp3/build-rpi/_deps/ser4cpp-subbuild/ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-test	bb582b6473fbc151
+818	840	1767644919861775152	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-test	bb582b6473fbc151
+698	722	1767644919742774491	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-update	c30dcf5bba86ea2e
+771	794	1767644919815774896	ser4cpp-populate-prefix/src/ser4cpp-populate-stamp/ser4cpp-populate-build	75d87c95daa074da

@@ -1,0 +1,21 @@
+# ninja log v5
+854	877	1767644918861769593	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-install	85abd2132d4eb671
+832	854	1767644918839769471	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-build	cee1f33475e2442a
+802	831	1767644918816769343	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-configure	67127e4587a72390
+899	933	1767644918919769916	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/CMakeFiles/exe4cpp-populate-complete	c2eee70ac2de38db
+802	831	1767644918816769343	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-configure	67127e4587a72390
+832	854	1767644918839769471	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-build	cee1f33475e2442a
+772	801	1767644918786769177	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-patch	3aba521a4ce8a4af
+899	933	1767644918919769916	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-done	c2eee70ac2de38db
+854	877	1767644918861769593	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-install	85abd2132d4eb671
+899	933	1767644918919769916	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-done	c2eee70ac2de38db
+877	899	1767644918884769721	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-test	7d2fd60b6808ea73
+899	933	1767644918919769916	CMakeFiles/exe4cpp-populate-complete	c2eee70ac2de38db
+0	88	1767644918073765213	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-mkdir	f8cc88d3def02c3a
+88	747	1767644918732768877	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-download	1a5f24c1c798472c
+88	747	1767644918732768877	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-download	1a5f24c1c798472c
+772	801	1767644918786769177	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-patch	3aba521a4ce8a4af
+877	899	1767644918884769721	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-test	7d2fd60b6808ea73
+747	772	1767644918758769021	exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-update	4811e7aa62d00f8a
+747	772	1767644918758769021	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-update	4811e7aa62d00f8a
+0	88	1767644918073765213	/home/ufu/projetos/slavednp3/build-rpi/_deps/exe4cpp-subbuild/exe4cpp-populate-prefix/src/exe4cpp-populate-stamp/exe4cpp-populate-mkdir	f8cc88d3def02c3a

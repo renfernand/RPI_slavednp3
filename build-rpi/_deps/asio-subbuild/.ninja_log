@@ -1,0 +1,21 @@
+# ninja log v5
+1230	1254	1767644917565762388	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-build	ceb760497e7effac
+1204	1229	1767644917540762249	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-configure	17e7df3efbdab80a
+1204	1229	1767644917540762249	asio-populate-prefix/src/asio-populate-stamp/asio-populate-configure	17e7df3efbdab80a
+1255	1279	1767644917590762527	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-install	51ac6197c93477eb
+1181	1204	1767644917515762110	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-patch	e26142758f826a87
+1181	1204	1767644917515762110	asio-populate-prefix/src/asio-populate-stamp/asio-populate-patch	e26142758f826a87
+1230	1254	1767644917565762388	asio-populate-prefix/src/asio-populate-stamp/asio-populate-build	ceb760497e7effac
+1303	1337	1767644917648762850	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-done	5b7b27c6d247bf1e
+1303	1337	1767644917648762850	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/CMakeFiles/asio-populate-complete	5b7b27c6d247bf1e
+1303	1337	1767644917648762850	CMakeFiles/asio-populate-complete	5b7b27c6d247bf1e
+0	95	1767644916405755939	asio-populate-prefix/src/asio-populate-stamp/asio-populate-mkdir	940aa88c10b67915
+95	1158	1767644917469761854	asio-populate-prefix/src/asio-populate-stamp/asio-populate-download	ea4ed5b9604c9692
+1159	1181	1767644917491761977	asio-populate-prefix/src/asio-populate-stamp/asio-populate-update	27cf7aaa13c4b07d
+1255	1279	1767644917590762527	asio-populate-prefix/src/asio-populate-stamp/asio-populate-install	51ac6197c93477eb
+1280	1302	1767644917613762655	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-test	9da5780ac0bcb876
+1280	1302	1767644917613762655	asio-populate-prefix/src/asio-populate-stamp/asio-populate-test	9da5780ac0bcb876
+0	95	1767644916405755939	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-mkdir	940aa88c10b67915
+1159	1181	1767644917491761977	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-update	27cf7aaa13c4b07d
+1303	1337	1767644917648762850	asio-populate-prefix/src/asio-populate-stamp/asio-populate-done	5b7b27c6d247bf1e
+95	1158	1767644917469761854	/home/ufu/projetos/slavednp3/build-rpi/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-download	ea4ed5b9604c9692
