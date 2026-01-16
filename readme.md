@@ -28,7 +28,7 @@ sudo apt install -y \
     gcc-arm-linux-gnueabihf \
     g++-arm-linux-gnueabihf
 
-> Create a base folder for projects:
+Create a base folder for projects:
 
 ```bash
     mkdir -p ~/projetos
@@ -40,10 +40,10 @@ sudo apt install -y \
 ## 2. Clone OpenDNP3 and This Project
 ### 2.1. Clone the OpenDNP3 library
 
-```bash
 
-cd ~/projetos
-git clone https://github.com/dnp3/opendnp3.git
+```bash
+    cd ~/projetos
+    git clone https://github.com/dnp3/opendnp3.git
 
 > This repository contains the OpenDNP3 library that will be used as a dependency.
 
@@ -51,20 +51,19 @@ git clone https://github.com/dnp3/opendnp3.git
 ### 2.2. Clone this outstation project
 
 ```bash
-cd ~/projetos
-git clone https://github.com/renfernand/RPI_slavednp3.git
-cd RPI_slavednp3
+    cd ~/projetos
+    git clone https://github.com/renfernand/RPI_slavednp3.git
+    cd RPI_slavednp3
 
 ---
 
 ## 3. Configure SSH Access to the Raspberry Pi
 
 On the Raspberry Pi (target):
-
 Habilite o SSH (via raspi-config ou interface gráfica):
 
 ```bash
-sudo raspi-config
+  sudo raspi-config
 
 
 //Interface Options -> SSH -> Enable
