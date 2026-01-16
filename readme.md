@@ -28,9 +28,11 @@ sudo apt install -y \
     gcc-arm-linux-gnueabihf \
     g++-arm-linux-gnueabihf
 
-Create a base folder for projects:
-mkdir -p ~/projetos
-cd ~/projetos
+> Create a base folder for projects:
+
+```bash
+    mkdir -p ~/projetos
+    cd ~/projetos
 
 
 ---
@@ -43,7 +45,7 @@ cd ~/projetos
 cd ~/projetos
 git clone https://github.com/dnp3/opendnp3.git
 
-// This repository contains the OpenDNP3 library that will be used as a dependency.
+> This repository contains the OpenDNP3 library that will be used as a dependency.
 
 
 ### 2.2. Clone this outstation project
