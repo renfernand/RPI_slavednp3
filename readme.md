@@ -31,8 +31,8 @@ sudo apt install -y \
 Create a base folder for projects:
 
 ```bash
-    mkdir -p ~/projetos
-    cd ~/projetos
+mkdir -p ~/projetos
+cd ~/projetos
 
 
 ---
@@ -42,8 +42,8 @@ Create a base folder for projects:
 
 
 ```bash
-    cd ~/projetos
-    git clone https://github.com/dnp3/opendnp3.git
+cd ~/projetos
+git clone https://github.com/dnp3/opendnp3.git
 
 > This repository contains the OpenDNP3 library that will be used as a dependency.
 
