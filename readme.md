@@ -31,6 +31,7 @@ Create a base folder for projects:
 mkdir -p ~/projetos
 cd ~/projetos
 
+---
 ## 2. Clone OpenDNP3 and This Project
 
 2.1. Clone the OpenDNP3 library
@@ -47,6 +48,7 @@ cd ~/projetos
 git clone https://github.com/renfernand/RPI_slavednp3.git
 cd RPI_slavednp3
 
+---
 ## 3. Configure SSH Access to the Raspberry Pi
 
 On the Raspberry Pi (target):
@@ -75,6 +77,7 @@ cmake -S . -B build-rpi \
 cmake --build build-rpi
 
 
+---
 ## 5. Deploy and Run on the Raspberry Pi
 
 O script deploy_rpi.sh (já no repositório) faz:
@@ -97,7 +100,8 @@ A Raspberry esteja acessível via SSH
 
 O binário e a biblioteca possam ser copiados para ${RPI_DIR}
 
-6. Project Structure (Resumo)
+---
+## 6. Project Structure (Resumo)
 RPI_slavednp3/
 ├── CMakeLists.txt        # Configuração do projeto
 ├── src/
@@ -111,6 +115,7 @@ O OpenDNP3 fica em: ~/projetos/opendnp3
 
 Este projeto referencia a biblioteca OpenDNP3 via CMake (instruções no CMakeLists.txt)
 
+---
 ## 7. License
 
 This project is licensed under the MIT License.
