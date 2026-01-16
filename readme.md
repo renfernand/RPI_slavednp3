@@ -1,4 +1,4 @@
- DNP3 Outstation for Raspberry Pi (RPI_slavednp3)
+# DNP3 Outstation for Raspberry Pi (RPI_slavednp3)
 
 This project implements a **DNP3 outstation (slave)** running on a **Raspberry Pi** (tested on Raspberry Pi 3 Model B), using the **OpenDNP3** library.
 
