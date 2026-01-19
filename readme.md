@@ -7,20 +7,21 @@ The code is **cross-compiled for ARM** on an Ubuntu 22.04 virtual machine and th
 ---
 ## 1. Para compilar e rodar o codigo
 
-  bash
+```bash
   cd ~/Projects/RPI_slavednp3
   mkdir -p build
   cd build
   cmake -G Ninja ..
   ninja
 
+```
+
 Para rodar:
 
-  bash
+```bash
    ./slavednp3
 
-
-
+```
 
 ---
 ## 2. License

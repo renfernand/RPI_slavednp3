@@ -191,25 +191,26 @@ int main()
         UpdateBuilder builder;
         
 		bool btn = g_button.load();
-        //bool led = g_led.load();
+        bool led = g_led.load();
+
 		//Pontos (BI1 e AI1)
 		pos=0;
 		analog_in_val[pos] = 10+i;
-		binary_in_val[pos] = toggle;
+		binary_in_val[pos] = btn;
 		builder.Update(Analog(analog_in_val[pos]), pos);
         builder.Update(Binary(binary_in_val[pos]), pos);
 		pos++; 
 
 		//Pontos (BI2 e AI2) 
 		analog_in_val[pos] = 20+i;
-		binary_in_val[pos] = toggle;		
+		binary_in_val[pos] = led;		
 		builder.Update(Analog(analog_in_val[pos]), pos);
         builder.Update(Binary(binary_in_val[pos]), pos);
 		pos++; 
 		
 		//Pontos (BI3 e AI3) 
 		analog_in_val[pos] = 30+i;
-		binary_in_val[pos] = toggle;		
+		binary_in_val[pos] = led;		
 		builder.Update(Analog(analog_in_val[pos]), pos);
         builder.Update(Binary(binary_in_val[pos]), pos);
 		pos++; 
@@ -220,8 +221,8 @@ int main()
 		else
 			toggle = 0;
 
-		cout << "BI_0 =" << binary_in_val[0] << endl ;
-		cout << "AI_0 =" << analog_in_val[0] << endl ;
+		//cout << "BI_0 =" << btn << endl ;
+		//cout << "AI_0 =" << led << endl ;
 
 		outstation->Apply(builder.Build());
         std::this_thread::sleep_for(std::chrono::seconds(1));
