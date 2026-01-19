@@ -10,6 +10,7 @@
 #include <opendnp3/channel/IPEndpoint.h>
 #include <opendnp3/channel/PrintingChannelListener.h>
 
+
 #ifdef LIBMODBUS_MASTER
 #include <modbus/modbus.h>
 #endif
@@ -24,6 +25,11 @@
 #include <vector>
 #include <mutex>
 #include <atomic>
+#include "main.h"
+#ifdef GPIOD_SUPPORT
+#include <gpiod.h>
+#endif
+
 
  using namespace std;
  using namespace opendnp3 ;
@@ -44,6 +50,9 @@ uint8_t i = 0;
 
 int32_t analog_in_val[NUM_SLAVES];
 bool    binary_in_val[NUM_SLAVES];
+
+std::atomic<bool> g_button{false};
+std::atomic<bool> g_led{false};
 
  // Estrutura para armazenar estado de cada slave Modbus
  struct SlaveState {
@@ -172,11 +181,17 @@ int main()
 
     outstation->Enable();
 
+
+	//gpio init
+	gpioinit();
+
     // Atualiza pontos locais (teste)
     while (true)
     {
         UpdateBuilder builder;
         
+		bool btn = g_button.load();
+        //bool led = g_led.load();
 		//Pontos (BI1 e AI1)
 		pos=0;
 		analog_in_val[pos] = 10+i;

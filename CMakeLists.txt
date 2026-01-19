@@ -10,6 +10,7 @@ add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/../opendnp3
 
 add_executable(slavednp3
     src/main.cpp
+    src/board.cpp
 )
 
 set_target_properties(slavednp3 PROPERTIES
@@ -17,5 +18,20 @@ set_target_properties(slavednp3 PROPERTIES
   INSTALL_RPATH "\$ORIGIN"
 )
 
+target_include_directories(slavednp3 PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
 
-target_link_libraries(slavednp3 PRIVATE opendnp3)
+# ------------------------------------------------------------------
+# Detecta libgpiod: se existir, ativa GPIO; se não, compila sem GPIO
+# ------------------------------------------------------------------
+find_library(GPIOD_LIB gpiod)
+
+if (GPIOD_LIB)
+    message(STATUS "libgpiod encontrada: ${GPIOD_LIB}")
+    target_link_libraries(slavednp3 PRIVATE opendnp3 ${GPIOD_LIB})
+    target_compile_definitions(slavednp3 PRIVATE GPIOD_SUPPORT=1)
+else()
+    message(WARNING "libgpiod NÃO encontrada -> compilando SEM GPIO")
+    target_link_libraries(slavednp3 PRIVATE opendnp3)
+endif()
