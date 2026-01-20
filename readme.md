@@ -5,15 +5,48 @@ This project implements a **DNP3 outstation (slave)** running on a **Raspberry P
 This version was compiled and run directly on the Raspberry Pi.
 
 This version also supports GPIOs for digital input and output according to the Codebox:
-BUTTON_1 = GPIO17 |  LED_1 = GPIO22
+
+
+BUTTON_1 = GPIO17 |  LED_1 = GPIO22 
+
 BUTTON_3 = GPIO18 |  LED_3 = GPIO24
+
 BUTTON_4 = GPIO27 |  LED_4 = GPIO25
 
 ---
-## 1. To build the version
+## 1. Basic Tools to compile in the Raspberry
+
+build-essential → gcc, g++, make, libc
+
+cmake → sistema de build do projeto
+
+ninja-build → build rápido (usado no projeto)
+
+git → clonar / atualizar repositório
+
+lib GPIO (libgpiod)
+
+```bash
+sudo apt update
+sudo apt install -y build-essential cmake ninja-build git
+sudo apt install -y libgpiod-dev gpiod
+
+```
+Permissão para acessar GPIO (importante)
+Sem isso, o programa compila mas não acessa os GPIOs.
+
+```bash
+sudo usermod -aG gpio $USER
+logout
+
+```
+
+
+---
+## 2. To build the version
 To build the version, follow these steps:
 
-### 1.1 Create a Project folder on the Raspberry Pi
+### 2.1 Create a Project folder on the Raspberry Pi
 
 ```bash
 
@@ -22,7 +55,7 @@ cd ~/project
 
 ```
 
-### 1.2 Clone the openDNP3 folder: see link
+### 2.2 Clone the openDNP3 folder: see link
 
 ```bash
 
@@ -31,7 +64,7 @@ git clone https://github.com/dnp3/opendnp3.git
 
 ```
 
-### 1.3 Clone the RPI_slavednp3 folder: see link
+### 2.3 Clone the RPI_slavednp3 folder: see link
 
 ```bash
 
@@ -42,8 +75,7 @@ git clone https://github.com/renfernand/RPI_slavednp3
 
 
 ---
-## 2. To compile and run the code
-
+## 3. To compile and run the code
 
 
 ```bash
@@ -64,7 +96,7 @@ In order to run:
 ```
 
 ---
-## 2. License
+## 4. License
 
 This project is licensed under the MIT License.
 For details, see the LICENSE
