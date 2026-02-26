@@ -24,13 +24,14 @@ target_include_directories(slavednp3 PRIVATE
 
 # ------------------------------------------------------------------
 # Detecta libgpiod: se existir, ativa GPIO; se não, compila sem GPIO
+#     target_compile_definitions(slavednp3 PRIVATE GPIOD_SUPPORT=0)
+
 # ------------------------------------------------------------------
 find_library(GPIOD_LIB gpiod)
 
 if (GPIOD_LIB)
     message(STATUS "libgpiod encontrada: ${GPIOD_LIB}")
     target_link_libraries(slavednp3 PRIVATE opendnp3 ${GPIOD_LIB})
-    target_compile_definitions(slavednp3 PRIVATE GPIOD_SUPPORT=1)
 else()
     message(WARNING "libgpiod NÃO encontrada -> compilando SEM GPIO")
     target_link_libraries(slavednp3 PRIVATE opendnp3)

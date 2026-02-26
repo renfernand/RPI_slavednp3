@@ -7,7 +7,6 @@
 extern std::atomic<bool> g_button;
 extern std::atomic<bool> g_led;
 
-
 int gpioinit();
 
 #endif

@@ -27,6 +27,8 @@
 
 struct GpioCtx
 {
+#ifdef GPIOD_SUPPORT   
+xxxx 
     gpiod_chip* chip = nullptr;
     gpiod_line* line_btn1 = nullptr;
     gpiod_line* line_btn3 = nullptr;
@@ -34,9 +36,11 @@ struct GpioCtx
     gpiod_line* line_led1 = nullptr;
     gpiod_line* line_led3 = nullptr;
     gpiod_line* line_led4 = nullptr;
+#endif
 
     bool init()
     {
+#ifdef GPIOD_SUPPORT        
         chip = gpiod_chip_open_by_name("gpiochip0");
         if (!chip) return false;
 
@@ -67,10 +71,14 @@ struct GpioCtx
             return false;
 
         return true;
+#else
+        return true;
+#endif
     }
 
     void set_led(uint8_t pos, bool on)
     {
+#ifdef GPIOD_SUPPORT           
         switch (pos){
             case 1:
                 if (line_led1) 
@@ -87,10 +95,14 @@ struct GpioCtx
             default:
             break;
         }
+#else
+      (void)pos; (void)on;
+#endif        
     }
 
     int read_btn(uint8_t pos)
     {
+#ifdef GPIOD_SUPPORT        
         switch (pos){
             case 1:
                 return line_btn1 ? gpiod_line_get_value(line_btn1) : -1;
@@ -107,10 +119,15 @@ struct GpioCtx
         }
 
         return 0;
+#else
+      (void) pos;
+      return 0;
+#endif         
     }
 
     void close()
     {
+#ifdef GPIOD_SUPPORT         
         if (chip) gpiod_chip_close(chip);
         chip = nullptr;
         line_btn1 = nullptr;
@@ -120,6 +137,7 @@ struct GpioCtx
         line_led1 = nullptr;
         line_led3 = nullptr;
         line_led4 = nullptr;
+#endif        
     }
 };
 
