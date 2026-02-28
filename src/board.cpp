@@ -121,7 +121,7 @@ xxxx
         return 0;
 #else
       (void) pos;
-      return 0;
+      return 1;
 #endif         
     }
 
@@ -182,7 +182,8 @@ void ButtonThread(GpioCtx* gpio)
             val[i] = gpio->read_btn(pos);
             if (val[i] >= 0) {
                 bool now = (val[i] != 0);
-
+                std::cerr << "bi_0 = 1" << std::endl;
+ 
                 // debounce simples: precisa repetir 3 leituras iguais
                 if (now == last[i]) 
                    stable[i]++;

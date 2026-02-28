@@ -190,7 +190,8 @@ int main()
     {
         UpdateBuilder builder;
         
-		bool btn = g_button.load();
+		//bool btn = g_button.load();
+		bool btn = toggle;
         bool led = g_led.load();
 
 		//Pontos (BI1 e AI1)
@@ -216,13 +217,10 @@ int main()
 		pos++; 
 		i++;
 
-		if (toggle == 0)
-			toggle = 1;
-		else
-			toggle = 0;
+		toggle = !toggle;
 
-		//cout << "BI_0 =" << btn << endl ;
-		//cout << "AI_0 =" << led << endl ;
+		cout << "BI_0 =" << btn << endl ;
+		cout << "AI_0 =" << analog_in_val[0] << endl ;
 
 		outstation->Apply(builder.Build());
         std::this_thread::sleep_for(std::chrono::seconds(1));
